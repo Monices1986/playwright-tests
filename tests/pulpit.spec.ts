@@ -29,7 +29,7 @@ test.describe("Pulpit tests", () => {
 
     //Assert
     await expect(page.locator("#show_messages")).toHaveText(
-      "Przelew wykonany! Chuck Demobankowy - 200,00PLN - pizza"
+      "Przelew wykonany! Chuck Demobankowy - 200,00PLN - pizza",
     );
   });
 
@@ -50,7 +50,7 @@ test.describe("Pulpit tests", () => {
     await page.getByTestId("close-button").click();
 
     await expect(page.getByTestId("message-text")).toHaveText(
-      "Doładowanie wykonane! 50,00PLN na numer 502 xxx xxx"
+      "Doładowanie wykonane! 50,00PLN na numer 502 xxx xxx",
     );
   });
 });
